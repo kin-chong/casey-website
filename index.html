@@ -5,30 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 20px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 40px 20px;
             text-align: center;
+            font-size: 1.5em;
         }
         .container {
-            width: 80%;
+            width: 90%;
+            max-width: 1200px;
             margin: auto;
-            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         section {
-            padding: 20px;
             background: white;
+            padding: 30px;
             margin: 20px 0;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .about-container img {
+            max-width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .project-list li {
+            padding: 15px;
+            background: #6e8efb;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            width: 200px;
+            text-align: center;
+        }
+        .project-list li:hover {
+            background: #a777e3;
         }
         footer {
             text-align: center;
@@ -37,33 +79,21 @@
             color: white;
             margin-top: 20px;
         }
-        .project-list {
-            list-style: none;
-            padding: 0;
-        }
-        .project-list li {
-            padding: 10px;
-            background: #eee;
-            margin: 10px 0;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .project-list li:hover {
-            background: #ddd;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Casey Low</h1>
+        <h1>My Portfolio</h1>
         <p>Web Developer | Designer | Programmer</p>
     </header>
     
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>Welcome to my personal portfolio. I am a passionate web developer with a knack for creating clean and functional websites.</p>
+            <div class="about-container">
+                <img src="assets/img/photo_2025-03-18_02-08-20.jpg" alt="Casey Low">
+                <p>Welcome to my personal portfolio. I am a passionate web developer with a knack for creating clean and functional websites.</p>
+            </div>
         </section>
         
         <section id="projects">
@@ -87,7 +117,7 @@
     
     <script>
         const projects = [
-            { name: "Project 1", description: "Description of project 1" },
+            { name: "Orbital", description: "Description of project 1" },
             { name: "Project 2", description: "Description of project 2" },
             { name: "Project 3", description: "Description of project 3" }
         ];
@@ -96,7 +126,7 @@
 
         projects.forEach(project => {
             const li = document.createElement("li");
-            li.textContent = `${project.name}: ${project.description}`;
+            li.textContent = `${project.name}`;
             li.addEventListener("click", () => {
                 alert(`${project.name}\n${project.description}`);
             });
