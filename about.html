@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Casey Low - About</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#1173d4",
+                    "background-light": "#f6f7f8",
+                    "background-dark": "#101922",
+                },
+                fontFamily: {
+                    "display": ["Inter"]
+                },
+            },
+        },
+    }
+</script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="min-h-screen flex flex-col">
+<header class="w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-primary/20 dark:border-primary/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center gap-3">
+                <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+                </svg>
+                <h1 class="text-xl font-bold text-gray-900 dark:text-white">Casey Low</h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-primary font-semibold dark:text-primary" href="#">About</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+                <button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors">Resume</button>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="flex-grow">
+    <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div class="flex-shrink-0">
+                <img alt="Casey Low" class="h-40 w-40 rounded-full object-cover ring-4 ring-primary/20" src="images/me.png"/>
+            </div>
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white tracking-tight">Casey Low</h2>
+                <p class="mt-1 text-lg text-primary">Computing Undergraduate</p>
+                <p class="mt-2 text-gray-600 dark:text-gray-400">National University of Singapore</p>
+            </div>
+        </div>
+
+        <div class="mt-16 space-y-12">
+
+            <!-- About -->
+            <section>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">About Me</h3>
+                <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                    I am a second-year undergraduate student pursuing a Computing degree in Information Security at the National University of Singapore. 
+                    Passionate about technology and its ability to solve real-world problems, I am constantly exploring innovative solutions and embracing new challenges.
+                    My interests lie in cybersecurity, social engineering, and networking, where I seek to deepen my knowledge and expertise.
+                    Beyond academics, I am a strong advocate for diversity and inclusion in the tech industry, striving to create an environment where everyone has the opportunity to thrive and contribute.
+                </p>
+            </section>
+
+            <!-- Experience -->
+            <section>
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Experience</h3>
+            <div class="mt-6 flow-root">
+                <ul class="-mb-8">
+
+                <!-- SingTel Internship -->
+                <li>
+                    <div class="relative pb-8">
+                    <span aria-hidden="true" class="absolute top-4 left-4 -ml-px h-full w-0.5 bg-primary/20"></span>
+                    <div class="relative flex items-start space-x-3">
+                        <div>
+                        <div class="relative px-1">
+                            <div class="h-8 w-8 bg-primary rounded-full ring-8 ring-background-light dark:ring-background-dark flex items-center justify-center">
+                            <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                            </svg>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="min-w-0 flex-1 py-1.5">
+                        <div class="text-sm font-medium text-gray-900 dark:text-white">Technology Associate Intern, 5G Garage – SingTel</div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Sep 2020 – Feb 2021</p>
+                        <ul class="mt-2 list-disc list-inside text-gray-700 dark:text-gray-300 text-sm space-y-1">
+                            <li>Tested 5G Customer-Premises Equipment (CPE) from suppliers (e.g., Ericsson) for integration into workflows.</li>
+                            <li>Troubleshot and resolved network/radio issues to maintain 1–10ms ping and 2 Gbps throughput.</li>
+                            <li>Collaborated with 10+ vendors (Zyxel, Huawei, etc.) to integrate 5G capabilities and improve software stability.</li>
+                            <li>Presented and supported execution of public workshops, showcasing 5G technology before commercial rollout.</li>
+                            <li>Authored a white paper introducing 5G architecture and applications of ML/AI with CPU and GPU technologies.</li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+
+                <!-- Cat & The Fiddle (optional if you want it too)
+                <li>
+                    <div class="relative">
+                    <div class="relative flex items-start space-x-3">
+                        <div>
+                        <div class="relative px-1">
+                            <div class="h-8 w-8 bg-primary rounded-full ring-8 ring-background-light dark:ring-background-dark flex items-center justify-center">
+                            <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                            </svg>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="min-w-0 flex-1 py-1.5">
+                        <div class="text-sm font-medium text-gray-900 dark:text-white">Customer Service Assistant – Cat & The Fiddle</div>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Nov 2017 – Apr 2018</p>
+                        <ul class="mt-2 list-disc list-inside text-gray-700 dark:text-gray-300 text-sm space-y-1">
+                            <li>Managed customer queries via phone/email with prompt and effective resolution.</li>
+                            <li>Handled order preparation, packing, and self-collection services with accuracy.</li>
+                            <li>Provided retail service, recommending products and assisting customers in-store.</li>
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+
+                </ul>
+            </div>-->
+            </section> 
+
+
+            <!-- Skills -->
+            <section>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Skills</h3>
+                <div class="mt-4 flex flex-wrap gap-2">
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Java</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">C++</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">C</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">SQL</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Dash</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">HTML</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">CSS</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Git</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Linux</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Flutter</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Network Security</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Penetration Testing</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Problem-Solving</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Teamwork</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Communication</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Photoshop</span>
+                    <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Premiere Pro</span>
+                </div>
+            </section>
+
+            <!-- Alma Mater -->
+            <section>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Alma Mater</h3>
+                <div class="mt-6 flex items-center gap-8">
+                    <img src="images/nus.png" alt="National University of Singapore Logo" class="h-16 object-contain"/>
+                    <img src="images/sp.png" alt="Singapore Polytechnic Logo" class="h-16 object-contain"/>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>
+
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a class="text-gray-400 hover:text-primary" href="https://github.com/kin-chong">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8-.9.8-.9-.6-.3-1.2-.6-1.2-.6-.2-.5.4-.5.4-.5.8.2 1.2.9 1.2.9.8 1.5 2.1 1.1 2.6.8.1-.6.3-1 .6-1.3-2.5-.3-5-1.2-5-5.2 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.9 1.1a9.2 9.2 0 015.3 0c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.4.1 2.7.7.8 1.1 1.7 1.1 2.9 0 4-2.6 4.9-5 5.2.4.3.7.9.7 1.9v2.9c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.4.5 12 .5z"></path></svg>
+            </a>
+            <a class="text-gray-400 hover:text-primary" href="https://www.linkedin.com/in/casey-low-908991196/">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM7.1 19H4.2V9.3h2.9V19zM5.7 8.1c-.9 0-1.7-.8-1.7-1.7 0-.9.8-1.7 1.7-1.7.9 0 1.7.8 1.7 1.7.1.9-.7 1.7-1.7 1.7zm13.3 10.9h-2.9v-5.2c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9v5.3h-2.9V9.3h2.8v1.3h.1c.4-.7 1.3-1.5 2.7-1.5 2.9 0 3.4 1.9 3.4 4.4v5.5z"></path></svg>
+            </a>
+        </div>
+        <p class="text-sm text-gray-500 dark:text-gray-400">© 2025 Casey Low. All rights reserved.</p>
+    </div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Casey Low - Projects</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<header class="w-full">
+<nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a class="flex items-center gap-2" href="#">
+<svg class="h-6 w-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.03 14.59L5.41 11l1.41-1.41L11 14.17l6.18-6.18L18.59 9.41 10.97 16.59z"></path>
+</svg>
+<span class="text-xl font-bold text-gray-900 dark:text-white">Casey Low</span>
+</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-primary font-semibold dark:text-primary" href="#">Projects</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+<button class="bg-primary/20 hover:bg-primary/30 text-primary font-bold py-2 px-4 rounded-lg transition-colors">
+                        Resume
+                    </button>
+</div>
+<div class="md:hidden">
+<button class="text-gray-800 dark:text-gray-200 focus:outline-none">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</nav>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-6 py-16">
+<div class="text-center">
+<h1 class="text-4xl md:text-5xl font-black tracking-tighter text-gray-900 dark:text-white leading-tight">
+                        My Projects
+                    </h1>
+<p class="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                        Here's a selection of some of my favorite projects. I've worked on a variety of things, from web applications to mobile apps.
+                    </p>
+</div>
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden group">
+<div class="relative">
+<img alt="Project Thumbnail" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyfnSjrFbXnjWlNw7WbRZMbpT7qAnsU4swAdGGtQyzw8dbIMBi3h2woaTJ02ZnXJpi8aXK3RqfWdjq99QUbxYoJ6B6i0rhbcMvBLJu4rdiVeTrmzp-if41ZX2g7QKr6h5ImQPWgunPTaFNH53MgbgTIt9CHcwSNgsEDSWkzxmxLWMOEnaVSFaFrfBwrgkE8rMYljmkUnKm9I6kKdtnLFdwmjumJV09tXObsQkqcyl5HlGPhCC2qjZxXaMe66vWJeSpBur9Ka6HYLrO"/>
+<div class="absolute inset-0 bg-black bg-opacity-20"></div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Project Title One</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-300">A brief description of the project, highlighting the key features and technologies used.</p>
+<div class="mt-4">
+<a class="text-primary hover:underline font-semibold" href="#">View Details →</a>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden group">
+<div class="relative">
+<img alt="Project Thumbnail" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA71y6Q65iWr2CwWC6RFTon2mT9uLc8DR4ynvf73IS02-HipW0fDXTGK4D3o4jgYJAlEsgzvkiCd6Y6Rkejmk0MFctOdj5bsj7mIVPDKuWiIqPzgOG_G-QBbGdR8sjBLsty-m0I82I-l2pAch-Bkd6naq144QTvGWy4UBg8AbKp87Xpqg-m1Mr4GGvp9mxQgFXEX_mITe0uVgB6QpSU_LSkRimpzgM3_IH1VXywhtl-fu02FfSgk6BTZSPhnG6PGNmCiEoCTe3-ZgfR"/>
+<div class="absolute inset-0 bg-black bg-opacity-20"></div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Project Title Two</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-300">A brief description of the project, highlighting the key features and technologies used.</p>
+<div class="mt-4">
+<a class="text-primary hover:underline font-semibold" href="#">View Details →</a>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden group">
+<div class="relative">
+<img alt="Project Thumbnail" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRwHGZQ5mSQ66ekbA1Je9JAofTOCraSwNdygYf6YaQxSaeFOPEHTeG59LOftbexCDVmmnwQY6sftGnHCVMfS81LKgn1XxFcq9qQvLqUTBPtzwNg4jvlEMUsPFCYL6i9iGD4CJvzDfjtxGDL0WxhySJ7ct6aqG15yTbJLuXcELtNgi4mk1PoIx3Rd1mF9WmXzB-RJJZUTpiSSkINgcUMqMIe8cYKOvklMGKMCYlk9GrY4lFiC4xC8pj7Be71Hu5MM7SMfPAc4tBTqC8"/>
+<div class="absolute inset-0 bg-black bg-opacity-20"></div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Project Title Three</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-300">A brief description of the project, highlighting the key features and technologies used.</p>
+<div class="mt-4">
+<a class="text-primary hover:underline font-semibold" href="#">View Details →</a>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden group">
+<div class="relative">
+<img alt="Project Thumbnail" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkSI-fkSo-MaIjQFQXSysCgEqpTVmtnmxjIC5zowlbm2Y59sm1g-acmz8VsAU14ANCJFKSxv0DWf8Jr95SaCFBPNAq0RbZzV8VsQX94WnaHlT_eYr8NQD-xMhPAW_Ja0VVFf_1i_GuTqspTy21EiLd-_44PetU0vGl2LqMvfXymZFq38gliEwhcNszgmWcOW4wHJH2ipW8l1_5AKDPzEsvllyFldPL0bfDauz7GCzg4Gp5y6ssvC8i_yvqREglp75kX8uurusSNFVX"/>
+<div class="absolute inset-0 bg-black bg-opacity-20"></div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Project Title Four</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-300">A brief description of the project, highlighting the key features and technologies used.</p>
+<div class="mt-4">
+<a class="text-primary hover:underline font-semibold" href="#">View Details →</a>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden group">
+<div class="relative">
+<img alt="Project Thumbnail" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN4b94emdktDZsTDhkNhfI1lVCctriMGzfBaOuJY6FbQ-cr0vJ3uAFW5Mlfav0L94z7v57kQ4D0cA7OzQgYM03YnptvvVcc0OPfTQUGL_Ec1Aomky8BPNrl8mf9QIKXzKQ6X1HXfgf2TYeNPWUaxZb_7Ud-cDTAgqHepjbuwmnQFtCfROSjJT0vDzz8H3rmjX3HtxrU0h2cmyHQ6-agGpiKueuz6f740KEJ0CfcXIccgEZ69aGDy2PpXtKHFY2iqTvU4rlZ499CZye"/>
+<div class="absolute inset-0 bg-black bg-opacity-20"></div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Project Title Five</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-300">A brief description of the project, highlighting the key features and technologies used.</p>
+<div class="mt-4">
+<a class="text-primary hover:underline font-semibold" href="#">View Details →</a>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden group">
+<div class="relative">
+<img alt="Project Thumbnail" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC27Edve7eK-yG6N-5HThElT7VxTXuG-JIw4Ifi9ekUh0fO2wBtAo2LnklLE4ritfjKvdKSr-yYL06EMQPA9Mw93ceU6t5gJ-HXtknF3KOv6nLGzqiTY3Kd563RHpvM-iDp2PsLHET2mDxc30X5Hixxgt9ilrh11PCOtj94Il0PdUqjibiSbLyrYCFxBxYK2FGWEa9OqH6mX0tJLj0QyVlELwQz8533oqbBYzQDIDz_60JaFRj4KyQk-_aI1IFfFeoBkUwm5XAeK2Kp"/>
+<div class="absolute inset-0 bg-black bg-opacity-20"></div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-gray-900 dark:text-white">Project Title Six</h3>
+<p class="mt-2 text-gray-600 dark:text-gray-300">A brief description of the project, highlighting the key features and technologies used.</p>
+<div class="mt-4">
+<a class="text-primary hover:underline font-semibold" href="#">View Details →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
