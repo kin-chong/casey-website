@@ -114,13 +114,13 @@
                 <section>
                     <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">About Me</h3>
                     <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                        I am a second-year undergraduate student pursuing a Computing degree in Information Security at the National University of Singapore. Passionate about technology and its ability to solve real-world problems, I am constantly exploring innovative solutions and embracing new challenges. My interests lie in cybersecurity, social engineering, and networking, where I seek to deepen my knowledge and expertise. Beyond academics, I am a strong advocate for diversity and inclusion in the tech industry, striving to create an environment where everyone has the opportunity to thrive and contribute.
+                        I am a third-year undergraduate student pursuing a Computing degree in Information Security at the National University of Singapore. Passionate about technology and its ability to solve real-world problems, I am constantly exploring innovative solutions and embracing new challenges. My interests lie in cybersecurity, social engineering, and networking, where I seek to deepen my knowledge and expertise. Beyond academics, I am a strong advocate for diversity and inclusion in the tech industry, striving to create an environment where everyone has the opportunity to thrive and contribute.
                     </p>
                 </section>
 
                 <!-- Experience -->
                 <section>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Experience</h3>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Experience&#x1F4BC;</h3>
                     <div class="mt-6 flow-root">
                         <ul class="-mb-8">
                             <!-- SingTel Internship -->
@@ -180,38 +180,151 @@
                     </div>
                 </section>
 
+                <!-- Alma Mater -->
+                <section>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Alma Mater 🎓</h3>
+
+                    <!-- 2-column grid -->
+                    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                        <!-- NUS -->
+                        <div>
+                            <button onclick="toggleDetails('nus-details')" class="flex flex-col items-start gap-3 focus:outline-none w-full text-center">
+                                <img src="images/nus.png" alt="National University of Singapore Logo" class="h-20 object-contain cursor-pointer transition-transform duration-300 hover:scale-105"/>
+                            </button>
+                            <div id="nus-details" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out mt-3 text-left">
+                                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">National University of Singapore</h4>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Bachelor of Computing in Information Security · Aug 2023 – Present</p>
+                                <ul class="mt-2 list-disc list-inside text-gray-700 dark:text-gray-300 text-sm space-y-1">
+                                    <li>Enhanced foundational programming skills, developed robust algorithmic thinking, and strong problem-solving abilities.</li>
+                                    <li>Gained practical security insights by studying cryptography, secure coding, and vulnerability analysis.</li>
+                                    <li>Skills: Cryptography · Public Key Cryptography · C · Python · C++ · Algorithms</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- SP -->
+                        <div>
+                            <button onclick="toggleDetails('sp-details')" class="flex flex-col items-start gap-3 focus:outline-none w-full text-center">
+                                <img src="images/sp.png" alt="Singapore Polytechnic Logo" class="h-20 object-contain cursor-pointer transition-transform duration-300 hover:scale-105"/>
+                            </button>
+                            <div id="sp-details" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out mt-3 text-left">
+                                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Singapore Polytechnic</h4>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Diploma in Computer Engineering (Merit) · Apr 2018 – Apr 2021</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">cGPA: 4.0/4.0</p>
+                                <ul class="mt-2 list-disc list-inside text-gray-700 dark:text-gray-300 text-sm space-y-1">
+                                    <li>Specialised in Cybersecurity.</li>
+                                    <li>Active in student leadership and programmes: Yearbook ExCo, Overseas LEAD Camp, SPOT Club, Peer Tutoring, Freshman Orientation Programme.</li>
+                                    <li>Studied computer networking, server management, firewall management, wireless technologies, cybersecurity operations, and penetration testing.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
                 <!-- Skills -->
                 <section>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Skills</h3>
-                    <div class="mt-4 flex flex-wrap gap-2">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Skills&#x1F6E0;</h3>
+
+                    <!-- Programming Languages -->
+                    <h4 class="mt-6 text-lg font-semibold text-gray-800 dark:text-gray-200">Programming Languages</h4>
+                    <div class="mt-2 flex flex-wrap gap-2">
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Python</span>
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Java</span>
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">C++</span>
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">C</span>
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">SQL</span>
-                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Dash</span>
+                    </div>
+
+                    <!-- Web Development -->
+                    <h4 class="mt-6 text-lg font-semibold text-gray-800 dark:text-gray-200">Web Development</h4>
+                    <div class="mt-2 flex flex-wrap gap-2">
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">HTML</span>
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">CSS</span>
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">JavaScript</span>
-                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Git</span>
-                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Linux</span>
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Dash</span>
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Flutter</span>
+                    </div>
+
+                    <!-- Cybersecurity -->
+                    <h4 class="mt-6 text-lg font-semibold text-gray-800 dark:text-gray-200">Cybersecurity</h4>
+                    <div class="mt-2 flex flex-wrap gap-2">
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Network Security</span>
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Penetration Testing</span>
-                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Problem-Solving</span>
-                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Teamwork</span>
-                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Communication</span>
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Network & System Administration</span>
+                    </div>
+
+                    <!-- Tools & Systems -->
+                    <h4 class="mt-6 text-lg font-semibold text-gray-800 dark:text-gray-200">Tools & Systems</h4>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Windows</span>
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Mac</span>
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Linux</span>
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Git</span>
+                    </div>
+
+                    <!-- Design & Media -->
+                    <h4 class="mt-6 text-lg font-semibold text-gray-800 dark:text-gray-200">Design & Media</h4>
+                    <div class="mt-2 flex flex-wrap gap-2">
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Photoshop</span>
                         <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Premiere Pro</span>
                     </div>
+
+                    <!-- Soft Skills -->
+                    <h4 class="mt-6 text-lg font-semibold text-gray-800 dark:text-gray-200">Soft Skills</h4>
+                    <div class="mt-2 flex flex-wrap gap-2">
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Leadership</span>
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Problem-Solving</span>
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Teamwork</span>
+                        <span class="bg-primary/10 text-primary text-sm font-medium px-3 py-1 rounded-full">Communication</span>
+                    </div>
                 </section>
 
-                <!-- Alma Mater -->
+                <!-- Awards -->
                 <section>
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Alma Mater</h3>
-                    <div class="mt-6 flex items-center gap-8">
-                        <img src="images/nus.png" alt="National University of Singapore Logo" class="h-16 object-contain"/>
-                        <img src="images/sp.png" alt="Singapore Polytechnic Logo" class="h-16 object-contain"/>
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Awards&#x1F396;</h3>
+                    <div class="mt-6 space-y-6">
+
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Cisco Systems Gold Medal</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Issued by Singapore Polytechnic · Apr 2021</p>
+                            <p class="mt-1 text-gray-700 dark:text-gray-300">Outstanding academic and CCA performance, contributions and attributes possessed.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Diploma with Merit</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Issued by Singapore Polytechnic · Apr 2021</p>
+                            <p class="mt-1 text-gray-700 dark:text-gray-300">Achieved top 10% in course of study.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Director's Honour Roll</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Issued by Singapore Polytechnic · Jan 2020</p>
+                            <p class="mt-1 text-gray-700 dark:text-gray-300">Achieved top 10% in course of study for the current academic year.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Director's Honour Roll</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Issued by Singapore Polytechnic · Jan 2019</p>
+                            <p class="mt-1 text-gray-700 dark:text-gray-300">Achieved top 10% in course of study for the current academic year.</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Singtel Engineering Cadet Scholarship</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Issued by Singapore Telecommunications Limited (Singtel) · Jan 2019</p>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-900 dark:text-white">SP Engineering Scholarship</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Issued by Singapore Polytechnic · Jan 2018</p>
+                            <p class="mt-1 text-gray-700 dark:text-gray-300">
+                                Awarded to outstanding first-year full-time diploma students in Singapore Polytechnic.
+                                Candidates are nominated based on strong leadership qualities, good academic and co-curricular records,
+                                and ranking within the top 10% of their diploma cohort after the first semester.
+                            </p>
+                        </div>
+
                     </div>
                 </section>
             </div>
@@ -275,6 +388,17 @@
     overlay.addEventListener("click", () => {
         if (menuOpen) closeMenu();
     });
+
+    function toggleDetails(id) {
+        const details = document.getElementById(id);
+        if (details.classList.contains("max-h-0")) {
+            details.classList.remove("max-h-0");
+            details.classList.add("max-h-[1000px]");
+        } else {
+            details.classList.add("max-h-0");
+            details.classList.remove("max-h-[1000px]");
+        }
+    }
 </script>
 </body>
 </html>
