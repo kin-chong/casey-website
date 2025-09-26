@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Casey Low</title>
@@ -8,116 +8,124 @@
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#1173d4",
-              "background-light": "#f6f7f8",
-              "background-dark": "#101922",
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3d0d60",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        display: ["Inter"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px",
+                    },
+                    keyframes: {
+                        fadeUp: {
+                            "0%": { opacity: 0, transform: "translateY(30px)" },
+                            "100%": { opacity: 1, transform: "translateY(0)" },
+                        },
+                        float: {
+                            "0%, 100%": { transform: "translateY(0)" },
+                            "50%": { transform: "translateY(-10px)" },
+                        },
+                    },
+                    animation: {
+                        fadeUp: "fadeUp 1s ease-out forwards",
+                        float: "float 5s ease-in-out infinite",
+                    },
+                },
             },
-            fontFamily: {
-              display: ["Inter"],
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px",
-            },
-          },
-        },
-      };
+        };
     </script>
 
     <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          "FILL" 0,
-          "wght" 400,
-          "GRAD" 0,
-          "opsz" 24;
-      }
+        .material-symbols-outlined {
+            font-variation-settings:
+                    "FILL" 0,
+                    "wght" 400,
+                    "GRAD" 0,
+                    "opsz" 24;
+        }
     </style>
-  </head>
+</head>
 
-  <body
-    class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200"
-  >
-    <div class="flex flex-col min-h-screen">
-      <!-- Header -->
-      <header class="w-full">
+<body
+        class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200"
+>
+<div class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="w-full">
         <nav
-          class="container mx-auto px-6 py-4 flex justify-between items-center"
+                class="container mx-auto px-6 py-4 flex justify-between items-center"
         >
-          <a class="flex items-center gap-2" href="#">
-            <img src="images/favicon.ico" alt="favicon" class="h-6 w-6" />
-            <span class="text-xl font-bold text-gray-900 dark:text-white">
+            <a class="flex items-center gap-2" href="#">
+                <img src="images/favicon.ico" alt="favicon" class="h-6 w-6" />
+                <span class="text-xl font-bold text-gray-900 dark:text-white">
               Casey Low
             </span>
-          </a>
+            </a>
 
-          <div class="hidden md:flex items-center space-x-8">
-            <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="about.html">About</a>
-            <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="projects.html">Projects</a>
-            <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="contact.html">Contact</a>
-            <!--
-            <button
-              class="bg-primary/20 hover:bg-primary/30 text-primary font-bold py-2 px-4 rounded-lg transition-colors"
-            >
-              Resume
-            </button>
-            -->
-          </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="about.html">About</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="projects.html">Projects</a>
+                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </div>
 
-          <div class="md:hidden">
-            <button class="text-gray-800 dark:text-gray-200 focus:outline-none">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-              </svg>
-            </button>
-          </div>
+            <div class="md:hidden">
+                <button class="text-gray-800 dark:text-gray-200 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                </button>
+            </div>
         </nav>
-      </header>
+    </header>
 
-      <!-- Main -->
-      <main class="flex-grow flex items-center">
+    <!-- Main -->
+    <main class="flex-grow flex items-center">
         <div class="container mx-auto px-6 py-16">
-          <div
-            class="flex flex-col lg:flex-row items-center justify-between gap-12"
-          >
-            <!-- Intro Text -->
-            <div class="lg:w-1/2 flex flex-col gap-6 text-center lg:text-left">
-              <h1 class="text-5xl md:text-6xl font-black tracking-tighter text-gray-900 dark:text-white leading-tight">
-                Hi, I'm Casey.
-              </h1>
-              <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300">
-                NUS Computing undergraduate passionate about cybersecurity and
-                inclusive tech.
-              </p>
-              <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
-                <a href="projects.html" class="bg-primary hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-lg">View Projects</a>
-                <a href="about.html" class="bg-primary/20 hover:bg-primary/30 text-primary font-bold py-3 px-6 rounded-lg transition-colors">Learn More</a>
-              </div>
-            </div>
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Intro Text -->
+                <div class="lg:w-1/2 flex flex-col gap-6 text-center lg:text-left opacity-0 animate-fadeUp">
+                    <h1 class="text-5xl md:text-6xl font-black tracking-tighter text-gray-900 dark:text-white leading-tight">
+                        Hi, I'm Casey.
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300">
+                        NUS Computing undergraduate passionate about cybersecurity and inclusive tech.
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <a href="projects.html" class="bg-primary hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-lg transition transform hover:scale-105 shadow-lg">
+                            View Projects
+                        </a>
+                        <a href="about.html" class="bg-primary/20 hover:bg-primary/30 text-primary font-bold py-3 px-6 rounded-lg transition transform hover:scale-105">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
 
-            <!-- Profile Image -->
-            <div class="lg:w-1/2">
-              <div class="aspect-square w-full max-w-md mx-auto lg:max-w-none rounded-full overflow-hidden shadow-2xl">
-                <img alt="Casey Low" class="w-full h-full object-cover" src="images/me.png"/>
-              </div>
+                <!-- Profile Image -->
+                <div class="lg:w-1/2 opacity-0 animate-fadeUp [animation-delay:300ms]">
+                    <div class="aspect-square w-full max-w-md mx-auto lg:max-w-none rounded-full overflow-hidden shadow-2xl">
+                        <img alt="Casey Low" class="w-full h-full object-cover animate-float" src="images/me.png"/>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </main>
-    </div>
-  </body>
+    </main>
+</div>
+</body>
 </html>
