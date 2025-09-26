@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>PixelPal – Casey Low</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-primary/20 dark:border-primary/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center gap-3">
+          <svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+          </svg>
+          <h1 class="text-xl font-bold text-gray-900 dark:text-white">Casey Low</h1>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="projects.html">Projects</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+          <button class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-bold hover:bg-primary/90 transition-colors">Resume</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-grow">
+    <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      
+      <!-- Header section -->
+      <div class="text-center">
+        <img src="images/pixelpal_logo_dark.png" alt="PixelPal Logo" class="mx-auto h-14 mb-6"/>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white">PixelPal</h2>
+        <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">
+          A mobile app for movie lovers – built with Flutter & Firebase.
+        </p>
+      </div>
+
+      <!-- Description -->
+      <section class="mt-12">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Overview</h3>
+        <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+          PixelPal is a mobile application developed as part of the Orbital program at the National University of Singapore. 
+          It helps movie lovers discover films, connect with friends, and keep track of movies they’ve watched. 
+          PixelPal also digitizes physical tickets with Google ML text recognition and provides personalized recommendations. <br><br> 
+          <a href="https://github.com/kin-chong/orbital--pixelpal-" target="_blank" class="text-primary font-medium hover:underline">View GitHub repo →</a>
+        </p>
+      </section>
+
+      <!-- Features & Technologies -->
+      <section class="mt-12 grid md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Features</h3>
+          <ul class="mt-4 list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            <li>Discover and search for movies you love</li>
+            <li>Connect with friends who share your interests</li>
+            <li>Digital ticket storage with auto text recognition</li>
+            <li>Personalized recommendations based on history</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Technologies</h3>
+          <ul class="mt-4 list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            <li>Flutter (cross-platform UI)</li>
+            <li>Dart</li>
+            <li>Firebase (auth, real-time DB, cloud storage)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Screenshots -->
+        <section class="mt-12">
+            <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Screenshots</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                <img src="images/PixelPal_1.png" alt="PixelPal Screenshot 1" 
+                    class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
+                    onclick="openLightbox(this.src)">
+                <img src="images/PixelPal_2.png" alt="PixelPal Screenshot 2" 
+                    class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
+                    onclick="openLightbox(this.src)">
+                <img src="images/PixelPal_3.png" alt="PixelPal Screenshot 3" 
+                    class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
+                    onclick="openLightbox(this.src)">
+                <img src="images/PixelPal_4.png" alt="PixelPal Screenshot 4" 
+                    class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
+                    onclick="openLightbox(this.src)">
+            </div>
+            </section>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox" 
+                class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+            <span class="absolute top-6 right-8 text-white text-3xl font-bold cursor-pointer" 
+                    onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-img" src="" 
+                alt="Expanded screenshot" 
+                class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg">
+            </div>
+
+            <script>
+            function openLightbox(src) {
+                document.getElementById("lightbox").classList.remove("hidden");
+                document.getElementById("lightbox-img").src = src;
+            }
+
+            function closeLightbox() {
+                document.getElementById("lightbox").classList.add("hidden");
+            }
+
+            // Close lightbox when clicking outside image
+            document.getElementById("lightbox").addEventListener("click", function(e) {
+                if (e.target.id === "lightbox") {
+                closeLightbox();
+                }
+            });
+        </script>
+
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+      <div class="flex justify-center space-x-6 mb-4">
+        <a class="text-gray-400 hover:text-primary" href="https://github.com/kin-chong">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8-.9.8-.9-.6-.3-1.2-.6-1.2-.6-.2-.5.4-.5.4-.5.8.2 1.2.9 1.2.9.8 1.5 2.1 1.1 2.6.8.1-.6.3-1 .6-1.3-2.5-.3-5-1.2-5-5.2 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.9 1.1a9.2 9.2 0 015.3 0c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.4.1 2.7.7.8 1.1 1.7 1.1 2.9 0 4-2.6 4.9-5 5.2.4.3.7.9.7 1.9v2.9c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.4.5 12 .5z"></path></svg>
+        </a>
+        <a class="text-gray-400 hover:text-primary" href="https://www.linkedin.com/in/casey-low-908991196/">
+          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM7.1 19H4.2V9.3h2.9V19zM5.7 8.1c-.9 0-1.7-.8-1.7-1.7 0-.9.8-1.7 1.7-1.7.9 0 1.7.8 1.7 1.7.1.9-.7 1.7-1.7 1.7zm13.3 10.9h-2.9v-5.2c0-1.3 0-3-1.8-3-1.8 0-2.1 1.4-2.1 2.9v5.3h-2.9V9.3h2.8v1.3h.1c.4-.7 1.3-1.5 2.7-1.5 2.9 0 3.4 1.9 3.4 4.4v5.5z"></path></svg>
+        </a>
+      </div>
+      <p class="text-sm text-gray-500 dark:text-gray-400">© 2025 Casey Low. All rights reserved.</p>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
