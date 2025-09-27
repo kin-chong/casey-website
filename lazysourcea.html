@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Casey Low - PixelPal</title>
+    <title>Casey Low - lazysourcea</title>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
@@ -15,16 +15,22 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#3d0d60",
+                        primary: "#3d0d60",
                         "background-light": "#f6f7f8",
-                        "background-dark": "#101922",
+                        "background-dark": "#101922"
                     },
-                    fontFamily: { "display": ["Inter"] },
+                    fontFamily: { display: ["Inter"] },
                     keyframes: {
                         slideIn: { "0%": { transform: "translateX(100%)", opacity: 0 }, "100%": { transform: "translateX(0)", opacity: 1 } },
                         slideOut: { "0%": { transform: "translateX(0)", opacity: 1 }, "100%": { transform: "translateX(100%)", opacity: 0 } },
-                        popIn: { "0%": { transform: "scale(0.8)", opacity: 0 }, "100%": { transform: "scale(1)", opacity: 1 } },
-                        popOut: { "0%": { transform: "scale(1)", opacity: 1 }, "100%": { transform: "scale(0.8)", opacity: 0 } }
+                        popIn: {
+                            "0%": { transform: "scale(0.8)", opacity: 0 },
+                            "100%": { transform: "scale(1)", opacity: 1 }
+                        },
+                        popOut: {
+                            "0%": { transform: "scale(1)", opacity: 1 },
+                            "100%": { transform: "scale(0.8)", opacity: 0 }
+                        }
                     },
                     animation: {
                         slideIn: "slideIn 0.3s ease-out forwards",
@@ -32,15 +38,13 @@
                         popIn: "popIn 0.25s ease-out",
                         popOut: "popOut 0.25s ease-in"
                     }
-                },
-            },
+                }
+            }
         }
     </script>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
 <div class="min-h-screen flex flex-col">
-
-    <!-- Header -->
     <header class="w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50 border-b border-primary/20 dark:border-primary/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
             <a class="flex items-center gap-3" href="index.html">
@@ -54,7 +58,7 @@
                 <a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
             </nav>
             <div class="md:hidden">
-                <button id="menu-btn" class="text-gray-800 dark:text-gray-200 focus:outline-none">
+                <button id="menu-btn" class="text-gray-800 dark:text-gray-200 focus:outline-none" aria-label="Open menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
                     </svg>
@@ -63,12 +67,9 @@
         </div>
     </header>
 
-    <!-- Overlay -->
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu"
-         class="fixed top-0 right-0 w-2/3 max-w-xs h-full bg-background-light dark:bg-background-dark border-l border-gray-200 dark:border-gray-700 transform translate-x-full hidden flex flex-col justify-between px-6 py-8 text-right z-50 shadow-lg">
+    <div id="mobile-menu" class="fixed top-0 right-0 w-2/3 max-w-xs h-full bg-background-light dark:bg-background-dark border-l border-gray-200 dark:border-gray-700 transform translate-x-full hidden flex flex-col justify-between px-6 py-8 text-right z-50 shadow-lg">
         <ul class="flex flex-col space-y-6">
             <li><a href="index.html" class="block text-lg text-gray-600 dark:text-gray-300 hover:text-primary">Home</a></li>
             <li><a href="about.html" class="block text-lg text-gray-600 dark:text-gray-300 hover:text-primary">About</a></li>
@@ -76,7 +77,7 @@
             <li><a href="contact.html" class="block text-lg text-gray-600 dark:text-gray-300 hover:text-primary">Contact</a></li>
             <li class="flex justify-end">
                 <a class="text-gray-400 hover:text-primary" href="https://github.com/kin-chong" aria-label="GitHub">
-                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8-.9.8-.9-.6-.3-1.2-.6-1.2-.6-.2-.5.4-.5.4-.5.8.2 1.2.9 1.2.9.8 1.5 2.1 1.1 2.6.8.1-.6.3-1 .6-1.3-2.5-.3-5-1.2-5-5.2 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.9 1.1a9.2 9.2 0 015.3 0c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.4.1 2.7.7.8 1.1 1.7 1.1 2.9 0 4-2.6 4.9-5 5.2.4.3.7.9.7 1.9v2.9c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.4.5 12 .5z"></path></svg>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.8-.9.8-.9-.6-.3-1.2-.6-1.2-.6-.2-.5.4-.5.4-.5.8.2 1.2.9 1.2.9.8 1.5 2.1 1.1 2.6.8.1-.6.3-1 .6-1.3-2.5-.3-5-1.2-5-5.2 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.9 1.1a9.2 9.2 0 0 1 5.3 0c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.4.1 2.7.7.8 1.1 1.7 1.1 2.9 0 4-2.6 4.9-5 5.2.4.3.7.9.7 1.9v2.9c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.65 18.4.5 12 .5z"></path></svg>
                 </a>
             </li>
             <li class="flex justify-end">
@@ -90,84 +91,80 @@
         </div>
     </div>
 
-    <!-- Main -->
     <main class="flex-grow">
         <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-
-            <!-- Header section -->
             <div class="text-center">
-                <img src="images/pixelpal/pixelpal_logo_dark.png" alt="PixelPal Logo" class="mx-auto h-14 mb-6"/>
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">PixelPal</h2>
-                <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">
-                    A mobile app for movie lovers – built with Flutter & Firebase.
-                </p>
+                <img src="images/lazysourcea/lazysourcea.png" alt="lazysourcea logo" class="mx-auto h-28 mb-6"/>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">lazysourcea</h2>
+                <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">A lightweight, keyboard-first task manager (Java 17, CLI).</p>
             </div>
 
-            <!-- Description -->
             <section class="mt-12">
-                <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Overview</h3>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Product overview</h3>
                 <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                    PixelPal is a mobile application developed as part of the Orbital program at the National University of Singapore.
-                    It helps movie lovers discover films, connect with friends, and keep track of movies they’ve watched.
-                    PixelPal also digitizes physical tickets with Google ML text recognition and provides personalized recommendations. <br><br>
-                    <a href="https://github.com/kin-chong/orbital--pixelpal-" target="_blank" class="text-primary font-medium hover:underline">View GitHub repo →</a>
+                    lazysourcea is a lightweight, command-line-driven task manager designed to help individuals capture,
+                    organise, and track work items with minimal friction. It focuses on rapid entry and simple,
+                    predictable behaviour so you can spend less time managing tasks and more time completing them. The
+                    app supports three basic task types (todo, deadline, event), persistent storage to disk, and a small
+                    set of intuitive commands for searching and manipulating tasks.
+                </p>
+                <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+                    This page summarises key features and system requirements. For the full documentation, see the <a
+                        href="https://kin-chong.github.io/ip/" target="_blank" class="text-primary font-medium hover:underline">User Guide →</a>.
                 </p>
             </section>
 
-            <!-- Features & Technologies -->
             <section class="mt-12 grid md:grid-cols-2 gap-10">
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Features</h3>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Key features</h3>
                     <ul class="mt-4 list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                        <li>Discover and search for movies you love</li>
-                        <li>Connect with friends who share your interests</li>
-                        <li>Digital ticket storage with auto text recognition</li>
-                        <li>Personalized recommendations based on history</li>
+                        <li>Fast, keyboard-friendly commands with predictable behaviour.</li>
+                        <li>Three task types: Todo, Deadline, Event.</li>
+                        <li>Forgiving date parsing for common formats.</li>
+                        <li>Search/filter by keyword; quick task lookup.</li>
+                        <li>Import/Export for backups or sharing.</li>
+                        <li>Minimal GUI; primary interaction via concise commands.</li>
+                        <li>Automatic saving to a local data file after changes.</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Technologies</h3>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">System requirements</h3>
                     <ul class="mt-4 list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                        <li>Flutter (cross-platform UI)</li>
-                        <li>Dart</li>
-                        <li>Firebase (auth, real-time DB, cloud storage)</li>
+                        <li>Java 17 (JRE or JDK) available on your PATH.</li>
+                        <li>Terminal/command prompt access.</li>
                     </ul>
+                    <div class="mt-4 p-4 rounded-lg bg-white/60 dark:bg-white/5 border border-primary/10 text-sm">
+                        <p class="font-semibold">Run</p>
+                        <pre class="mt-2 overflow-x-auto"><code>java -jar lazysourcea.jar</code></pre>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">The app will create or update a local data file in the working directory.</p>
+                    </div>
                 </div>
             </section>
 
-            <!-- Screenshots -->
             <section class="mt-12">
                 <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Screenshots</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-                    <img src="images/pixelpal/PixelPal_1.png" alt="PixelPal Screenshot 1"
-                         class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
-                         onclick="openLightbox(this.src)">
-                    <img src="images/pixelpal/PixelPal_2.png" alt="PixelPal Screenshot 2"
-                         class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
-                         onclick="openLightbox(this.src)">
-                    <img src="images/pixelpal/PixelPal_3.png" alt="PixelPal Screenshot 3"
-                         class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
-                         onclick="openLightbox(this.src)">
-                    <img src="images/pixelpal/PixelPal_4.png" alt="PixelPal Screenshot 4"
-                         class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
-                         onclick="openLightbox(this.src)">
+                    <img src="images/lazysourcea/Ui.png" alt="lazysourcea UI" class="rounded-lg shadow cursor-pointer hover:opacity-80 transition" onclick="openLightbox(this.src)">
+                    <img src="images/lazysourcea/list.png" alt="Task list" class="rounded-lg shadow cursor-pointer hover:opacity-80 transition" onclick="openLightbox(this.src)">
+                    <img src="images/lazysourcea/add.png" alt="Adding tasks" class="rounded-lg shadow cursor-pointer hover:opacity-80 transition" onclick="openLightbox(this.src)">
+                    <img src="images/lazysourcea/find.png" alt="Finding tasks" class="rounded-lg shadow cursor-pointer hover:opacity-80 transition" onclick="openLightbox(this.src)">
                 </div>
             </section>
 
-            <!-- Lightbox Modal -->
-            <div id="lightbox"
-                 class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
-                <span class="absolute top-6 right-8 text-white text-3xl font-bold cursor-pointer"
-                      onclick="closeLightbox()">&times;</span>
-                <img id="lightbox-img" src=""
-                     alt="Expanded screenshot"
-                     class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg transition"/>
+            <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+                <span class="absolute top-6 right-8 text-white text-3xl font-bold cursor-pointer" onclick="closeLightbox()">&times;</span>
+                <img id="lightbox-img" src="" alt="Expanded screenshot" class="max-h-[90%] max-w-[90%] rounded-lg shadow-lg transition">
             </div>
+
+            <section class="mt-12">
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Contact & contribution</h3>
+                <p class="mt-4 text-gray-700 dark:text-gray-300">Found a bug or want to suggest improvements? Open an issue in the project repository.</p>
+                <p class="mt-2"><a class="text-primary font-medium hover:underline" href="https://github.com/kin-chong/ip" target="_blank">View GitHub repo →</a></p>
+            </section>
 
         </div>
     </main>
 
-    <!-- Footer (unchanged) -->
     <footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
             <div class="flex justify-center space-x-6 mb-4">
@@ -183,7 +180,6 @@
     </footer>
 
 </div>
-
 <script>
     const btn = document.getElementById("menu-btn");
     const menu = document.getElementById("mobile-menu");
@@ -213,7 +209,6 @@
         });
     }
 
-    // Close when clicking outside image
     lightbox.addEventListener("click", function(e) {
         if (e.target.id === "lightbox") {
             closeLightbox();
