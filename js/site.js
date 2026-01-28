@@ -55,11 +55,13 @@ function closeLightbox() {
 }
 
 // Close when clicking outside image
-lightbox.addEventListener("click", function(e) {
-    if (e.target.id === "lightbox") {
-        closeLightbox();
-    }
-});
+if (lightbox) {
+    lightbox.addEventListener("click", function(e) {
+        if (e.target.id === "lightbox") {
+            closeLightbox();
+        }
+    });
+}
 
 function openMenu() {
     menu.classList.remove("hidden", "translate-x-full");
