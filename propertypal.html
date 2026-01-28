@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Casey Low - PixelPal</title>
+    <title>Casey Low - PropertyPal</title>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
@@ -96,10 +96,10 @@
 
             <!-- Header section -->
             <div class="text-center">
-                <img src="images/pixelpal/pixelpal_logo_dark.png" alt="PixelPal Logo" class="mx-auto h-14 mb-6"/>
-                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">PixelPal</h2>
+                <img src="images/propertypal/propertypal_logo.png" alt="PropertyPal Logo" class="mx-auto h-14 mb-6"/>
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white">PropertyPal</h2>
                 <p class="mt-2 text-lg text-gray-600 dark:text-gray-400">
-                    A mobile app for movie lovers – built with Flutter & Firebase.
+                    A desktop app for real estate professionals to track, filter, and prioritise clients in one place..
                 </p>
             </div>
 
@@ -107,10 +107,10 @@
             <section class="mt-12">
                 <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Overview</h3>
                 <p class="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                    PixelPal is a mobile application developed as part of the Orbital program at the National University of Singapore.
-                    It helps movie lovers discover films, connect with friends, and keep track of movies they’ve watched.
-                    PixelPal also digitizes physical tickets with Google ML text recognition and provides personalized recommendations. <br><br>
-                    <a href="https://github.com/kin-chong/orbital--pixelpal-" target="_blank" class="text-primary font-medium hover:underline">View GitHub repo →</a>
+                    PropertyPal is a desktop application developed as part of the CS2103 Software Engineering course at the National University of Singapore.
+                    It helps real estate agents manage client information and property preferences efficiently through a fast, command-driven interface.
+                    PropertyPal enables users to add, search, filter, and organise client records such as contact details, property types, prices, and intentions, making client management quicker and more structured. <br><br>
+                    <a href="https://https://github.com/AY2526S1-CS2103-F10-2/tp" target="_blank" class="text-primary font-medium hover:underline">View GitHub repo →</a>
                 </p>
             </section>
 
@@ -119,18 +119,17 @@
                 <div>
                     <h3 class="text-xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Features</h3>
                     <ul class="mt-4 list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                        <li>Discover and search for movies you love</li>
-                        <li>Connect with friends who share your interests</li>
-                        <li>Digital ticket storage with auto text recognition</li>
-                        <li>Personalized recommendations based on history</li>
+                        <li>Add, edit, and delete client contact records</li>
+                        <li>Fast command-based search across multiple fields</li>
+                        <li>Filter clients by intention, property type, and price</li>
+                        <li>Persistent local storage with automatic saving</li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Technologies</h3>
                     <ul class="mt-4 list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-                        <li>Flutter (cross-platform UI)</li>
-                        <li>Dart</li>
-                        <li>Firebase (auth, real-time DB, cloud storage)</li>
+                        <li>Java 17</li>
+                        <li>JavaFX (desktop GUI)</li>
                     </ul>
                 </div>
             </section>
@@ -139,16 +138,10 @@
             <section class="mt-12">
                 <h3 class="text-2xl font-bold text-gray-900 dark:text-white border-b border-primary/20 pb-2">Screenshots</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
-                    <img src="images/pixelpal/PixelPal_1.png" alt="PixelPal Screenshot 1"
+                    <img src="images/propertypal/uiComponent.png" alt="PropertyPal Screenshot 1"
                          class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
                          onclick="openLightbox(this.src)">
-                    <img src="images/pixelpal/PixelPal_2.png" alt="PixelPal Screenshot 2"
-                         class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
-                         onclick="openLightbox(this.src)">
-                    <img src="images/pixelpal/PixelPal_3.png" alt="PixelPal Screenshot 3"
-                         class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
-                         onclick="openLightbox(this.src)">
-                    <img src="images/pixelpal/PixelPal_4.png" alt="PixelPal Screenshot 4"
+                    <img src="images/propertypal/addingPerson.png" alt="PropertyPal Screenshot 2"
                          class="rounded-lg shadow cursor-pointer hover:opacity-80 transition"
                          onclick="openLightbox(this.src)">
                 </div>
@@ -181,6 +174,7 @@
             <p class="text-sm text-gray-500 dark:text-gray-400" data-footer></p>
         </div>
     </footer>
+
 </div>
 
 <script src="js/site.js"></script>

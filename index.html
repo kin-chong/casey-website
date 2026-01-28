@@ -172,45 +172,8 @@
     </main>
 </div>
 
-<script>
-    const btn = document.getElementById("menu-btn");
-    const menu = document.getElementById("mobile-menu");
-    const overlay = document.getElementById("overlay");
-    let menuOpen = false;
+<script src="js/site.js"></script>
 
-    function openMenu() {
-        menu.classList.remove("hidden", "translate-x-full");
-        menu.classList.add("animate-slideIn");
-        overlay.classList.remove("hidden");
-        menuOpen = true;
-    }
-
-    function closeMenu() {
-        menu.classList.remove("animate-slideIn");
-        menu.classList.add("animate-slideOut");
-
-        menu.addEventListener("animationend", function handler() {
-            menu.classList.add("hidden", "translate-x-full");
-            menu.classList.remove("animate-slideOut");
-            menu.removeEventListener("animationend", handler);
-        });
-
-        overlay.classList.add("hidden");
-        menuOpen = false;
-    }
-
-    btn.addEventListener("click", () => {
-        if (!menuOpen) {
-            openMenu();
-        } else {
-            closeMenu();
-        }
-    });
-
-    overlay.addEventListener("click", () => {
-        if (menuOpen) closeMenu();
-    });
-</script>
 
 </body>
 </html>

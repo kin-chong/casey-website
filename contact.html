@@ -150,39 +150,13 @@
     <!-- Footer (unchanged) -->
     <footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30 mt-16">
         <div class="max-w-7xl mx-auto py-6 px-4 text-center">
-            <p class="text-sm text-gray-500 dark:text-gray-400">© 2025 Casey Low. All rights reserved.</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400" data-footer></p>
         </div>
     </footer>
 
 </div>
 
-<script>
-    const btn = document.getElementById("menu-btn");
-    const menu = document.getElementById("mobile-menu");
-    const overlay = document.getElementById("overlay");
-    let menuOpen = false;
+<script src="js/site.js"></script>
 
-    function openMenu() {
-        menu.classList.remove("hidden", "translate-x-full");
-        menu.classList.add("animate-slideIn");
-        overlay.classList.remove("hidden");
-        menuOpen = true;
-    }
-
-    function closeMenu() {
-        menu.classList.remove("animate-slideIn");
-        menu.classList.add("animate-slideOut");
-        menu.addEventListener("animationend", function handler() {
-            menu.classList.add("hidden", "translate-x-full");
-            menu.classList.remove("animate-slideOut");
-            menu.removeEventListener("animationend", handler);
-        });
-        overlay.classList.add("hidden");
-        menuOpen = false;
-    }
-
-    btn.addEventListener("click", () => { menuOpen ? closeMenu() : openMenu(); });
-    overlay.addEventListener("click", () => { if (menuOpen) closeMenu(); });
-</script>
 </body>
 </html>
