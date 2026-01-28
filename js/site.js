@@ -9,6 +9,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+function toggleDetails(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const openClass = "max-h-[500px]"; // adjust if your content is taller
+    const closedClass = "max-h-0";
+
+    if (el.classList.contains(closedClass)) {
+        el.classList.remove(closedClass);
+        el.classList.add(openClass);
+    } else {
+        el.classList.add(closedClass);
+        el.classList.remove(openClass);
+    }
+}
+
+
 const btn = document.getElementById("menu-btn");
 const menu = document.getElementById("mobile-menu");
 const overlay = document.getElementById("overlay");
